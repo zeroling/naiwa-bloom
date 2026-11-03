@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#fbf6e9"><meta name="description" content="一小粒开心，慢慢长成拿玫瑰的奶蛙。摸摸屏幕，擦掉一点，它还会继续长大。祝你天天开心。">
+ <title>奶蛙给你送花 · 祝你天天开心</title>
+ <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <main class="page">
+  <header class="intro"><p class="eyebrow"><span class="tiny-flower" aria-hidden="true">✳</span> 今天，也有一点小开心</p>
+   <h1>送你一朵<span>开心</span><i aria-hidden="true">✿</i></h1>
+   <p class="subtitle">奶蛙带着玫瑰，慢慢向你走来。</p>
+  </header>
+  <section class="experience" aria-label="奶蛙实时粒子演化">
+   <div class="stage" id="stage">
+    <div class="stage-top"><span class="live-label"><i></i><span id="growth-label">一小粒开心，准备出发</span></span><button id="pause" class="pause" type="button" aria-label="暂停演化" disabled><span id="pause-icon">Ⅱ</span></button></div>
+    <canvas id="particles" aria-label="实时生成的拿玫瑰奶蛙，选择擦除后可用手指涂抹"></canvas>
+    <div id="loading" class="loading"><span class="seed-glow"></span><p>把一点开心，装进这朵花里…</p></div>
+    <div id="brush" class="brush" hidden></div>
+   </div>
+   <div class="tools" role="group" aria-label="与奶蛙互动">
+    <button id="erase" class="tool" type="button" aria-pressed="true" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 9 9-5 5H8l-5-5zM7 11l9 9M13 20h8"/></svg>擦除</button>
+    <button id="pan" class="tool" type="button" aria-pressed="false" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M8 7l4-4 4 4M8 17l4 4 4-4M7 8l-4 4 4 4M17 8l4 4-4 4"/></svg>移动</button>
+    <button id="restart" class="restart" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg>再送我一朵</button>
+   </div>
+   <p class="hint" id="hint">轻轻擦掉一点，它还会继续长大。</p>
+   <p id="notice" role="status" hidden></p>
+  </section>
+  <section class="letter" aria-label="给你的小寄语">
+   <p>有些开心，不必很盛大。一只小奶蛙，一朵玫瑰，就想把今天的温柔，悄悄送到你手里。</p>
+   <p>它会慢慢长大，也会慢慢把缺口补好。你可以轻轻擦去一角，再等一等，看它重新盛开。</p>
+   <p>愿你忙碌时，也记得歇一歇；偶尔低落时，也有人递来一朵花。愿平凡的日子里，总有一点小开心，正在向你走来。</p>
+  </section>
+  <details class="play-settings"><summary>画笔与视角</summary><div class="settings-content">
+   <label>轻轻一擦的大小<input id="brush-size" type="range" min="0.025" max="0.2" step="0.005" value="0.06"></label>
+   <button type="button" id="center">让奶蛙回到眼前</button>
+  </div></details>
+ </main>
+ <script type="module" src="./app.js"></script>
+</body></html>

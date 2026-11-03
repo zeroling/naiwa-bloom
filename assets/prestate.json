@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "epoch": 10000,
+  "physicalSteps": 65536,
+  "particles": 8197,
+  "target": 8192,
+  "source": "opening.bin",
+  "bytes": 1147628,
+  "semantics": "Real original frozen CUDA dynamics, sampled frames only. Exact final positions, shape/life states, identities and physical clock transferred to the verified browser implementation; browser stochastic stream starts at seed101."
+}

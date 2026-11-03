@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "name": "拿玫瑰的奶蛙",
+  "epoch": 10000,
+  "target": 8192,
+  "epsilon": 0.1,
+  "grid": [
+    16,
+    16
+  ],
+  "spacing": 0.014084507042253521,
+  "birthRadius": 0.007042253521126761,
+  "alpha": 0.05,
+  "updateProbability": 0.5,
+  "lifeInterval": 64,
+  "seed": [
+    -0.04803222790360451,
+    0.03777569904923439
+  ],
+  "shapeChannels": 16,
+  "lifeChannels": 13,
+  "tensors": {
+    "shape": {
+      "inputs": 66,
+      "hidden": 128,
+      "outputs": 18,
+      "stride": 20,
+      "parts": [
+        {
+          "offset": 0,
+          "length": 8448
+        },
+        {
+          "offset": 33792,
+          "length": 128
+        },
+        {
+          "offset": 34304,
+          "length": 2560
+        },
+        {
+          "offset": 44544,
+          "length": 20
+        }
+      ]
+    },
+    "life": {
+      "inputs": 56,
+      "hidden": 128,
+      "outputs": 18,
+      "stride": 20,
+      "parts": [
+        {
+          "offset": 44624,
+          "length": 7168
+        },
+        {
+          "offset": 73296,
+          "length": 128
+        },
+        {
+          "offset": 73808,
+          "length": 2560
+        },
+        {
+          "offset": 84048,
+          "length": 20
+        }
+      ]
+    }
+  },
+  "source": "model_epoch_010000.pt",
+  "semantics": "real frozen NPA: independent shape/life states; shape then life every64 steps; no image/target lookup at inference"
+}
