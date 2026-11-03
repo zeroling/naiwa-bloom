@@ -4,7 +4,7 @@
   "physicalSteps": 65536,
   "particles": 8197,
   "frames": 170,
-  "playbackDurationMs": 6000,
+  "playbackDurationMs": 12000,
   "bytes": 5654376,
   "gzipBytes": 5454379,
   "recordingSeconds": 170.5414450999815,

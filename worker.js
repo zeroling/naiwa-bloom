@@ -1,6 +1,6 @@
 import {createGPU} from './gpu.js';
 let engine,meta,modelBytes,prestate=null,opening=null,introPending=false,playbackIndex=0,playbackElapsed=0,playbackLast=0,gpu=null,mode='auto',paused=false,visible=true,ready=false,running=false,commands=[],selected='cpu',reason='',serial=0,profileAt=0,useGPU=false,fastUntil=8192;
-const PLAYBACK_DURATION=6000;
+const PLAYBACK_DURATION=12000;
 const math={env:{log1p:Math.log1p,log:Math.log,exp:Math.exp,tanh:Math.tanh,sin:Math.sin,cos:Math.cos}};
 const floats=(ptr,n)=>new Float32Array(engine.memory.buffer,ptr,n);
 async function loadEngine(){for(const file of ['engine.wasm','engine-scalar.wasm']){try{const response=await fetch(new URL(file,import.meta.url));const binary=await response.arrayBuffer();return (await WebAssembly.instantiate(binary,math)).instance.exports;}catch(e){if(file==='engine-scalar.wasm')throw e;}}}
