@@ -5,14 +5,14 @@ const math={env:{log1p:Math.log1p,log:Math.log,exp:Math.exp,tanh:Math.tanh,sin:M
 const floats=(ptr,n)=>new Float32Array(engine.memory.buffer,ptr,n);
 async function loadEngine(){for(const file of ['engine.wasm','engine-scalar.wasm']){try{const response=await fetch(new URL(file,import.meta.url));const binary=await response.arrayBuffer();return (await WebAssembly.instantiate(binary,math)).instance.exports;}catch(e){if(file==='engine-scalar.wasm')throw e;}}}
 async function loadPrestate(){try{
- const response=await fetch(new URL('assets/prestate.bin',import.meta.url));if(!response.ok)return null;
+ const response=await fetch(new URL('assets/prestate-legs-20261103-1.bin',import.meta.url));if(!response.ok)return null;
  const bytes=await response.arrayBuffer(),h=new Uint32Array(bytes,0,12);
  if(h[0]!==0x3153504e||h[1]!==1||h[2]!==meta.epoch||h[3]<1||h[3]>32768||bytes.byteLength!==48+h[3]*140)return null;
  return {h,x:new Float32Array(bytes,48,h[3]*2),s:new Float32Array(bytes,48+h[3]*8,h[3]*32),ids:new Uint32Array(bytes,48+h[3]*136,h[3])};
  }catch(e){return null;}}
 async function loadOpening(){try{
- let bytes;if(typeof DecompressionStream==='function'){const response=await fetch(new URL('assets/opening.bin.gz',import.meta.url));if(!response.ok)return null;bytes=await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();}
- else{const response=await fetch(new URL('assets/opening.bin',import.meta.url));if(!response.ok)return null;bytes=await response.arrayBuffer();}
+ let bytes;if(typeof DecompressionStream==='function'){const response=await fetch(new URL('assets/opening-legs-20261103-1.bin.gz',import.meta.url));if(!response.ok)return null;bytes=await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();}
+ else{const response=await fetch(new URL('assets/opening-legs-20261103-1.bin',import.meta.url));if(!response.ok)return null;bytes=await response.arrayBuffer();}
  const head=new Uint32Array(bytes,0,5);if(head[0]!==0x3152504e||head[1]!==1||head[2]!==meta.epoch)return null;
  const frames=[];let offset=20;
  for(let i=0;i<head[3];i++){const h=new Uint32Array(bytes,offset,2),q=new Float32Array(bytes,offset+8,4),n=h[1];frames.push({step:h[0],n,ox:q[0],oy:q[1],sx:q[2],sy:q[3],xy:new Uint16Array(bytes,offset+24,n*2),rgb:new Uint8Array(bytes,offset+24+n*4,n*3)});offset=(offset+24+n*7+3)&~3;}

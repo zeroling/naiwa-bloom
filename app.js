@@ -13,7 +13,7 @@ function draw(){if(paintPending)return;paintPending=true;requestAnimationFrame((
  if(gl){gl.viewport(0,0,w,h);gl.clearColor(18/255,43/255,38/255,1);gl.clear(gl.COLOR_BUFFER_BIT);if(!points?.length)return;gl.useProgram(program);gl.bindBuffer(gl.ARRAY_BUFFER,buffer);if(uploaded!==points){gl.bufferData(gl.ARRAY_BUFFER,points,gl.DYNAMIC_DRAW);uploaded=points;}gl.enableVertexAttribArray(position);gl.vertexAttribPointer(position,2,gl.FLOAT,false,20,0);gl.enableVertexAttribArray(color);gl.vertexAttribPointer(color,3,gl.FLOAT,false,20,8);gl.uniform2f(uniforms.center,camera.x,camera.y);gl.uniform1f(uniforms.extent,camera.extent);gl.uniform1f(uniforms.size,size);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.drawArrays(gl.POINTS,0,total);
  }else{ctx.fillStyle='#122b26';ctx.fillRect(0,0,w,h);if(!points?.length)return;const scale=w/(camera.extent*2);for(let i=0;i<points.length;i+=5){const x=(points[i]-camera.x)*scale+w/2,y=-(points[i+1]-camera.y)*scale+h/2;if(x<0||x>w||y<0||y>h)continue;ctx.fillStyle=`rgb(${Math.round(points[i+2]*255)} ${Math.round(points[i+3]*255)} ${Math.round(points[i+4]*255)})`;ctx.fillRect(x-size/2,y-size/2,size,size);}}
  });}
-const worker=new Worker(new URL('./worker.js',import.meta.url),{type:'module'});
+const worker=new Worker(new URL('./worker.js?v=legs-20261103-1',import.meta.url),{type:'module'});
 worker.onmessage=({data:message})=>{
  if(message.type==='frame'){
   data=message;paused=message.paused;if(meta&&message.serial!==stage._serial){stage._serial=message.serial;camera.x=meta.seed[0];camera.y=meta.seed[1];camera.extent=1.17;camera.follow=true;

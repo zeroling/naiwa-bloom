@@ -5,9 +5,9 @@
   "particles": 8197,
   "frames": 170,
   "playbackDurationMs": 12000,
-  "bytes": 5654376,
-  "gzipBytes": 5454379,
-  "recordingSeconds": 170.5414450999815,
+  "bytes": 5654548,
+  "gzipBytes": 5370228,
+  "recordingSeconds": 134.6840861000237,
   "framesIndex": [
     {
       "step": 0,
@@ -263,51 +263,51 @@
     },
     {
       "step": 1984,
-      "n": 147
+      "n": 148
     },
     {
       "step": 2016,
-      "n": 147
+      "n": 148
     },
     {
       "step": 2048,
-      "n": 183
+      "n": 184
     },
     {
       "step": 2176,
-      "n": 290
+      "n": 291
     },
     {
       "step": 2304,
-      "n": 453
+      "n": 454
     },
     {
       "step": 2432,
-      "n": 716
+      "n": 717
     },
     {
       "step": 2560,
-      "n": 1116
+      "n": 1118
     },
     {
       "step": 2688,
-      "n": 1766
+      "n": 1768
     },
     {
       "step": 2816,
-      "n": 2776
+      "n": 2779
     },
     {
       "step": 2944,
-      "n": 4332
+      "n": 4337
     },
     {
       "step": 3072,
-      "n": 6739
+      "n": 6743
     },
     {
       "step": 3200,
-      "n": 8198
+      "n": 8195
     },
     {
       "step": 3328,
@@ -339,31 +339,31 @@
     },
     {
       "step": 4224,
-      "n": 8217
+      "n": 8218
     },
     {
       "step": 4352,
-      "n": 8197
+      "n": 8196
     },
     {
       "step": 4480,
-      "n": 8200
+      "n": 8199
     },
     {
       "step": 4608,
-      "n": 8202
+      "n": 8203
     },
     {
       "step": 4736,
-      "n": 8205
+      "n": 8206
     },
     {
       "step": 4864,
-      "n": 8186
+      "n": 8187
     },
     {
       "step": 4992,
-      "n": 8196
+      "n": 8195
     },
     {
       "step": 5120,
@@ -391,11 +391,11 @@
     },
     {
       "step": 5888,
-      "n": 8206
+      "n": 8205
     },
     {
       "step": 6016,
-      "n": 8199
+      "n": 8200
     },
     {
       "step": 6144,
@@ -411,23 +411,23 @@
     },
     {
       "step": 6528,
-      "n": 8210
+      "n": 8211
     },
     {
       "step": 6656,
-      "n": 8204
+      "n": 8205
     },
     {
       "step": 6784,
-      "n": 8196
+      "n": 8197
     },
     {
       "step": 6912,
-      "n": 8206
+      "n": 8205
     },
     {
       "step": 7040,
-      "n": 8207
+      "n": 8206
     },
     {
       "step": 7168,
@@ -451,11 +451,11 @@
     },
     {
       "step": 7808,
-      "n": 8198
+      "n": 8199
     },
     {
       "step": 7936,
-      "n": 8215
+      "n": 8216
     },
     {
       "step": 8064,
@@ -467,7 +467,7 @@
     },
     {
       "step": 9216,
-      "n": 8199
+      "n": 8200
     },
     {
       "step": 10240,
@@ -479,7 +479,7 @@
     },
     {
       "step": 12288,
-      "n": 8193
+      "n": 8192
     },
     {
       "step": 13312,
@@ -487,11 +487,11 @@
     },
     {
       "step": 14336,
-      "n": 8198
+      "n": 8199
     },
     {
       "step": 15360,
-      "n": 8203
+      "n": 8202
     },
     {
       "step": 16384,
@@ -499,7 +499,7 @@
     },
     {
       "step": 17408,
-      "n": 8206
+      "n": 8207
     },
     {
       "step": 18432,
@@ -519,11 +519,11 @@
     },
     {
       "step": 22528,
-      "n": 8215
+      "n": 8216
     },
     {
       "step": 23552,
-      "n": 8210
+      "n": 8209
     },
     {
       "step": 24576,
@@ -531,7 +531,7 @@
     },
     {
       "step": 25600,
-      "n": 8197
+      "n": 8198
     },
     {
       "step": 26624,
@@ -539,7 +539,7 @@
     },
     {
       "step": 27648,
-      "n": 8209
+      "n": 8210
     },
     {
       "step": 28672,
@@ -551,7 +551,7 @@
     },
     {
       "step": 30720,
-      "n": 8216
+      "n": 8215
     },
     {
       "step": 31744,
@@ -559,11 +559,11 @@
     },
     {
       "step": 32768,
-      "n": 8192
+      "n": 8193
     },
     {
       "step": 33792,
-      "n": 8215
+      "n": 8214
     },
     {
       "step": 34816,
@@ -575,7 +575,7 @@
     },
     {
       "step": 36864,
-      "n": 8220
+      "n": 8221
     },
     {
       "step": 37888,
@@ -587,7 +587,7 @@
     },
     {
       "step": 39936,
-      "n": 8214
+      "n": 8213
     },
     {
       "step": 40960,
@@ -631,11 +631,11 @@
     },
     {
       "step": 51200,
-      "n": 8212
+      "n": 8213
     },
     {
       "step": 52224,
-      "n": 8216
+      "n": 8217
     },
     {
       "step": 53248,
@@ -643,7 +643,7 @@
     },
     {
       "step": 54272,
-      "n": 8216
+      "n": 8215
     },
     {
       "step": 55296,
@@ -651,7 +651,7 @@
     },
     {
       "step": 56320,
-      "n": 8202
+      "n": 8201
     },
     {
       "step": 57344,
@@ -663,19 +663,19 @@
     },
     {
       "step": 59392,
-      "n": 8196
+      "n": 8195
     },
     {
       "step": 60416,
-      "n": 8199
+      "n": 8198
     },
     {
       "step": 61440,
-      "n": 8199
+      "n": 8200
     },
     {
       "step": 62464,
-      "n": 8209
+      "n": 8210
     },
     {
       "step": 63488,
@@ -683,12 +683,20 @@
     },
     {
       "step": 64512,
-      "n": 8218
+      "n": 8217
     },
     {
       "step": 65536,
       "n": 8197
     }
   ],
-  "semantics": "Real original frozen CUDA dynamics, sampled frames only. Exact final positions, shape/life states, identities and physical clock transferred to the verified browser implementation; browser stochastic stream starts at seed101."
+  "quality": {
+    "silhouette_iou": 0.9153012633323669,
+    "rgb_mse": 0.007478044833987951,
+    "metric_alignment": "centroid_translation_v1",
+    "metric_density_threshold": 0.1
+  },
+  "semantics": "Real original frozen CUDA dynamics, sampled frames only. Exact final positions, shape/life states, identities and physical clock transferred to the verified browser implementation; browser stochastic stream starts at seed101.",
+  "assetRevision": "legs-20261103-1",
+  "shapeAcceptance": "two separate feet; matched terminal state; CPU4096 and hardware-GPU2048 continuation checked"
 }
